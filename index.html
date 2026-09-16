@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhinandan Updates | Latest Updates, News & Helpdesk</title>
+<meta name="description" content="Abhinandan Updates - Updates, News, Features and Helpdesk in one place.">
+<meta name="author" content="Abhinandan Updates">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500;600;700;800&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#101522;--muted:#6c7484;--line:#e7e9ef;--bg:#f6f7fb;
+  --card:#fff;--accent:#315cff;--accent2:#7048ff;--soft:#eef2ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Bricolage Grotesque","Anek Devanagari",sans-serif;
+}
+a{text-decoration:none;color:inherit}
+.page{min-height:100vh;padding:22px 16px 40px}
+.shell{
+  width:min(1180px,100%);margin:auto;background:var(--card);
+  border:1px solid #e5e7ee;border-radius:30px;overflow:hidden;
+  box-shadow:0 30px 90px rgba(20,28,55,.12);
+  animation:floatIn .7s ease both;
+}
+
+/* HEADER */
+.top{
+  padding:22px 32px;border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  position:sticky;top:0;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(14px);z-index:50;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand h1{font-size:19px;margin:0;font-weight:800;letter-spacing:-.3px}
+.brand p{margin:3px 0 0;color:var(--muted);font-size:11px}
+.nav{display:flex;gap:7px;align-items:center}
+.nav a{
+  padding:10px 13px;border-radius:11px;color:#596273;font-size:12px;font-weight:700;
+  transition:.2s;
+}
+.nav a:hover{background:var(--soft);color:#294bd0}
+.menu{display:none;border:0;background:#f5f6f9;border-radius:11px;padding:10px 12px;font-size:19px;cursor:pointer}
+
+/* HERO */
+.hero{
+  padding:70px 40px 55px;text-align:center;
+  background:
+    radial-gradient(circle at 15% 10%,rgba(49,92,255,.10),transparent 28%),
+    radial-gradient(circle at 85% 15%,rgba(112,72,255,.10),transparent 28%);
+}
+.eyebrow{
+  display:inline-flex;padding:8px 13px;border-radius:999px;background:var(--soft);
+  color:#294bd0;font-size:11px;font-weight:800;letter-spacing:.5px;
+}
+.hero h2{
+  font-size:clamp(40px,7vw,76px);line-height:1.02;margin:18px auto 14px;
+  letter-spacing:-3px;max-width:850px;
+}
+.hero h2 span{
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p{
+  margin:auto;color:var(--muted);font-family:"Anek Devanagari",sans-serif;
+  font-size:18px;line-height:1.55;max-width:700px;
+}
+.hero-actions{margin-top:28px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-width:145px;padding:13px 18px;border-radius:13px;font-size:13px;font-weight:800;
+  transition:.25s;
+}
+.btn.primary{background:#0b0c0f;color:#fff;box-shadow:0 12px 28px rgba(0,0,0,.15)}
+.btn.secondary{background:#fff;border:1px solid var(--line)}
+.btn:hover{transform:translateY(-3px)}
+
+/* QUICK CARDS */
+.content{padding:0 34px 45px}
+.section-title{display:flex;justify-content:space-between;align-items:end;margin:5px 0 18px}
+.section-title h3{margin:0;font-size:21px}
+.section-title p{margin:0;color:var(--muted);font:14px "Anek Devanagari",sans-serif}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{
+  border:1px solid #e4e7ef;border-radius:24px;padding:24px;
+  background:linear-gradient(145deg,#ffffff 0%,#fbfcff 100%);
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+  position:relative;overflow:hidden;min-height:205px;
+  box-shadow:0 8px 24px rgba(24,32,58,.045);
+}
+.card:before{
+  content:"";position:absolute;width:150px;height:150px;border-radius:50%;
+  background:linear-gradient(135deg,rgba(49,92,255,.08),rgba(112,72,255,.06));
+  right:-70px;top:-75px;transition:.35s ease;
+}
+.card:after{
+  content:"";position:absolute;left:0;top:0;width:100%;height:3px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  transform:scaleX(0);transform-origin:left;transition:.3s ease;
+}
+.card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 22px 48px rgba(20,28,55,.12);
+  border-color:#d6dcf5;
+}
+.card:hover:before{transform:scale(1.35)}
+.card:hover:after{transform:scaleX(1)}
+.icon{
+  width:48px;height:48px;border-radius:15px;
+  background:linear-gradient(145deg,#f0f3ff,#e9edff);
+  border:1px solid #e0e5ff;
+  display:grid;place-items:center;font-size:20px;margin-bottom:21px;position:relative;
+  box-shadow:0 7px 18px rgba(49,92,255,.08);
+}
+.card h4{margin:0 0 8px;font-size:17px;letter-spacing:-.2px}
+.card p{margin:0;color:var(--muted);font:13px/1.5 "Anek Devanagari",sans-serif}
+.arrow{position:absolute;right:20px;bottom:19px;width:31px;height:31px;border-radius:50%;background:#f2f4f8;display:grid;place-items:center;font-size:16px;color:#566174;transition:.25s}.card:hover .arrow{background:#e9edff;color:#315cff;transform:translate(2px,-2px)}
+
+/* FEATURE STRIP */
+.feature{
+  margin-top:16px;border-radius:23px;padding:28px;
+  background:#0b0c0f;color:#fff;display:flex;align-items:center;
+  justify-content:space-between;gap:25px;overflow:hidden;position:relative;
+}
+.feature:after{
+  content:"";position:absolute;width:250px;height:250px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.08);right:-90px;top:-120px;
+}
+.feature h3{margin:0 0 7px;font-size:22px}
+.feature p{margin:0;color:#aeb4c0;font:14px/1.5 "Anek Devanagari",sans-serif}
+.feature .mini{
+  white-space:nowrap;background:#fff;color:#101522;padding:12px 17px;
+  border-radius:12px;font-size:12px;font-weight:800;z-index:1;
+}
+
+/* NEWS */
+.news{margin-top:38px}
+.news-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.news-card{
+  border:1px solid #e4e7ef;border-radius:21px;padding:22px;
+  background:linear-gradient(145deg,#fff,#fbfcff);
+  box-shadow:0 7px 22px rgba(20,28,55,.045);
+  transition:.28s;
+}
+.news-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(20,28,55,.10);border-color:#d7ddf2}
+.tag{display:inline-block;background:var(--soft);color:#3152d1;border-radius:999px;padding:6px 9px;font-size:10px;font-weight:800}
+.news-card h4{font-size:16px;line-height:1.3;margin:13px 0 8px}
+.news-card p{color:var(--muted);font:13px/1.5 "Anek Devanagari",sans-serif;margin:0}
+.news-card .read{display:inline-block;margin-top:16px;font-size:11px;font-weight:800;color:#315cff}
+
+/* HELPDESK */
+.help{
+  margin-top:38px;border:1px solid var(--line);border-radius:23px;padding:28px;
+  display:grid;grid-template-columns:1fr 1fr;gap:25px;background:#fbfbfd;
+}
+.help h3{margin:0 0 8px;font-size:22px}
+.help p{color:var(--muted);font:14px/1.55 "Anek Devanagari",sans-serif;margin:0}
+.help-links{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.help-btn{
+  padding:14px;border:1px solid var(--line);background:#fff;border-radius:13px;
+  font-size:12px;font-weight:800;text-align:center;transition:.2s;
+}
+.help-btn:hover{border-color:#b9c4ff;background:var(--soft);transform:translateY(-2px)}
+
+/* FOOTER */
+.footer{
+  border-top:1px solid var(--line);padding:22px 30px;
+  display:flex;justify-content:space-between;gap:15px;color:#8a919f;font-size:11px;
+}
+.footer strong{color:#555e6d}
+
+/* MOBILE */
+@media(max-width:850px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .news-list{grid-template-columns:1fr}
+  .help{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .page{padding:10px 8px 25px}
+  .shell{border-radius:22px}
+  .top{padding:17px 18px}
+  .nav{display:none;position:absolute;top:75px;left:10px;right:10px;background:#fff;border:1px solid var(--line);padding:8px;border-radius:16px;box-shadow:0 18px 40px rgba(20,28,55,.12);flex-direction:column}
+  .nav.open{display:flex}.nav a{width:100%;text-align:center}
+  .menu{display:block}
+  .hero{padding:52px 20px 42px}
+  .hero h2{letter-spacing:-1.8px}
+  .hero p{font-size:16px}
+  .content{padding:0 17px 32px}
+  .grid{grid-template-columns:1fr 1fr;gap:10px}
+  .card{padding:17px}.card h4{font-size:14px}.card p{font-size:12px}
+  .feature{padding:22px;display:block}.feature .mini{display:inline-block;margin-top:17px}
+  .help{padding:22px}
+  .help-links{grid-template-columns:1fr}
+  .footer{padding:18px;display:block;text-align:center}
+  .footer div+div{margin-top:7px}
+}
+@media(max-width:420px){
+  .grid{grid-template-columns:1fr}
+  .hero h2{font-size:43px}
+}
+@keyframes floatIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+</style>
+</head>
+
+<body>
+<div class="page">
+<main class="shell">
+
+<header class="top">
+  <a class="brand" href="#">
+    <div>
+      <h1>Abhinandan Updates</h1>
+      <p>Updates • News • Features • Helpdesk</p>
+    </div>
+  </a>
+
+  <nav class="nav" id="nav">
+    <a href="#updates">Updates</a>
+    <a href="#news">News</a>
+    <a href="#features">Features</a>
+    <a href="#helpdesk">Helpdesk</a>
+  </nav>
+  <button class="menu" id="menu" aria-label="Open menu">☰</button>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">WELCOME TO ABHINANDAN UPDATES</div>
+  <h2>Stay Updated.<br><span>Stay Ahead.</span></h2>
+  <p>
+    Latest updates, important news, useful features aur helpdesk —
+    sab kuch ek hi jagah, simple aur fast.
+  </p>
+  <div class="hero-actions">
+    <a href="#updates" class="btn primary">Explore Updates ↗</a>
+    <a href="#helpdesk" class="btn secondary">Helpdesk</a>
+  </div>
+</section>
+
+<div class="content">
+
+<section id="updates">
+  <div class="section-title">
+    <div>
+      <h3>Everything you need</h3>
+      <p>एक जगह पर सभी जरूरी sections</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <a class="card" href="#updates">
+      <div class="icon">⚡</div>
+      <h4>Updates</h4>
+      <p>Important aur latest updates ek simple format mein.</p>
+      <span class="arrow">↗</span>
+    </a>
+
+    <a class="card" href="#news">
+      <div class="icon">◉</div>
+      <h4>News</h4>
+      <p>Latest news aur important information ko quickly dekhein.</p>
+      <span class="arrow">↗</span>
+    </a>
+
+    <a class="card" href="#features">
+      <div class="icon">✦</div>
+      <h4>Features</h4>
+      <p>Useful tools aur smart features ko ek jagah access karein.</p>
+      <span class="arrow">↗</span>
+    </a>
+
+    <a class="card" href="#helpdesk">
+      <div class="icon">?</div>
+      <h4>Helpdesk</h4>
+      <p>Kisi bhi problem ya query ke liye help aur guidance.</p>
+      <span class="arrow">↗</span>
+    </a>
+  </div>
+</section>
+
+<section id="features" class="feature">
+  <div>
+    <h3>Abhinandan Updates</h3>
+    <p>Fast information. Clean design. Easy access.</p>
+  </div>
+  <a href="#news" class="mini">View Latest News ↗</a>
+</section>
+
+<section id="news" class="news">
+  <div class="section-title">
+    <div>
+      <h3>Latest News</h3>
+      <p>ताजा खबरें और जरूरी जानकारी</p>
+    </div>
+  </div>
+
+  <div class="news-list">
+    <article class="news-card">
+      <span class="tag">LATEST</span>
+      <h4>Important Update</h4>
+      <p>Yahan latest update ka short description show kiya ja sakta hai.</p>
+      <a class="read" href="#">Read More →</a>
+    </article>
+
+    <article class="news-card">
+      <span class="tag">NEWS</span>
+      <h4>New Information</h4>
+      <p>Important news aur information ko yahan highlight kiya ja sakta hai.</p>
+      <a class="read" href="#">Read More →</a>
+    </article>
+
+    <article class="news-card">
+      <span class="tag">UPDATE</span>
+      <h4>Latest Announcement</h4>
+      <p>New announcement ya notification ki details yahan add karein.</p>
+      <a class="read" href="#">Read More →</a>
+    </article>
+  </div>
+</section>
+
+<section id="helpdesk" class="help">
+  <div>
+    <h3>Need Help?</h3>
+    <p>
+      Abhinandan Updates se related kisi bhi query ke liye
+      helpdesk section ka use karein.
+    </p>
+  </div>
+  <div class="help-links">
+    <a href="#" class="help-btn">Contact Us</a>
+    <a href="#" class="help-btn">Report a Problem</a>
+    <a href="#" class="help-btn">Ask a Query</a>
+    <a href="#" class="help-btn">Support</a>
+  </div>
+</section>
+
+</div>
+
+<footer class="footer">
+  <div>© 2026 <strong>Abhinandan Updates</strong></div>
+  <div>Updates • News • Features • Helpdesk</div>
+</footer>
+
+</main>
+</div>
+
+<script>
+const menu=document.getElementById("menu");
+const nav=document.getElementById("nav");
+
+menu.addEventListener("click",()=>{
+  nav.classList.toggle("open");
+  menu.textContent=nav.classList.contains("open")?"✕":"☰";
+});
+
+document.querySelectorAll(".nav a").forEach(link=>{
+  link.addEventListener("click",()=>{
+    nav.classList.remove("open");
+    menu.textContent="☰";
+  });
+});
+</script>
+</body>
+</html>
