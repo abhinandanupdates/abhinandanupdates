@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latest News | Abhinandan Updates</title>
+<meta name="description" content="Abhinandan Updates - Latest News and important updates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500;600;700;800&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#101522;--muted:#70798a;--line:#e6e9f0;--bg:#f5f7fb;--blue:#315cff;--soft:#eef2ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque","Anek Devanagari",sans-serif}a{text-decoration:none;color:inherit}
+.page{padding:18px 14px 35px}.shell{max-width:1180px;margin:auto;background:#fff;border:1px solid #e3e6ed;border-radius:29px;overflow:hidden;box-shadow:0 28px 85px rgba(22,31,55,.11);animation:up .65s ease}
+.top{height:76px;padding:0 30px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(15px);z-index:20}
+.brand h1{font-size:19px;margin:0;font-weight:800}.brand p{margin:3px 0 0;color:var(--muted);font-size:11px}.nav{display:flex;gap:6px}.nav a{padding:10px 13px;border-radius:11px;color:#5d6676;font-size:12px;font-weight:800}.nav a:hover,.nav a.active{background:var(--soft);color:#294bd0}.menu{display:none;border:0;background:#f3f5f8;border-radius:11px;padding:9px 12px;font-size:18px}
+.hero{padding:48px 34px 32px;background:radial-gradient(circle at 12% 20%,rgba(49,92,255,.09),transparent 27%),radial-gradient(circle at 88% 10%,rgba(112,72,255,.09),transparent 25%)}.crumb{font-size:11px;color:#657083;margin-bottom:18px}.crumb a{color:var(--blue);font-weight:700}.hero-row{display:flex;align-items:end;justify-content:space-between;gap:25px}.eyebrow{display:inline-flex;padding:7px 11px;border-radius:999px;background:var(--soft);color:#294bd0;font-size:10px;font-weight:800;letter-spacing:.5px}h2{font-size:clamp(35px,5vw,55px);line-height:1;margin:14px 0 10px;letter-spacing:-2px}.hero-text{margin:0;color:var(--muted);font:16px/1.55 "Anek Devanagari",sans-serif;max-width:620px}.count{min-width:150px;padding:17px 19px;border:1px solid var(--line);border-radius:17px;background:#fff;text-align:center}.count b{display:block;font-size:25px}.count span{font-size:10px;color:var(--muted);font-weight:700}
+.controls{padding:20px 34px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;gap:10px;justify-content:space-between;align-items:center}.categories{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:#fff;padding:9px 13px;border-radius:999px;font-size:11px;font-weight:800;color:#626b7b;cursor:pointer}.chip.active,.chip:hover{background:#101522;color:#fff;border-color:#101522}.search{width:230px;height:40px;border:1px solid var(--line);border-radius:11px;padding:0 13px;outline:0;font:12px "Bricolage Grotesque"}.search:focus{border-color:#aab8ff;box-shadow:0 0 0 4px var(--soft)}
+.content{padding:28px 34px 42px}.section-head{margin-bottom:17px}.section-head h3{margin:0;font-size:20px}.section-head p{margin:4px 0 0;color:var(--muted);font:12px "Anek Devanagari",sans-serif}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.news-card{border:1px solid #e3e6ed;border-radius:21px;overflow:hidden;background:#fff;transition:.28s;box-shadow:0 7px 22px rgba(20,28,55,.045)}.news-card:hover{transform:translateY(-6px);box-shadow:0 20px 42px rgba(20,28,55,.11);border-color:#d5dcf4}.thumb{height:155px;background:linear-gradient(135deg,#eef2ff,#f5f1ff);display:grid;place-items:center;position:relative;overflow:hidden}.thumb:before{content:"";width:145px;height:145px;border-radius:50%;border:1px solid rgba(49,92,255,.13);position:absolute;right:-45px;top:-55px}.thumb-icon{width:55px;height:55px;border-radius:17px;background:#fff;border:1px solid #e1e5f1;display:grid;place-items:center;font-size:24px;box-shadow:0 10px 25px rgba(49,92,255,.09)}.body{padding:19px}.meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}.tag{font-size:9px;font-weight:800;padding:6px 8px;border-radius:999px;background:var(--soft);color:#3152d1}.date{font-size:10px;color:#8a92a0}.news-card h4{font-size:16px;line-height:1.32;margin:0 0 8px}.news-card p{margin:0;color:var(--muted);font:13px/1.5 "Anek Devanagari",sans-serif}.read{display:flex;justify-content:space-between;align-items:center;margin-top:17px;font-size:11px;font-weight:800;color:#315cff}.read span{width:29px;height:29px;border-radius:50%;background:#f1f3f7;color:#596274;display:grid;place-items:center}.news-card:hover .read span{background:var(--soft);color:var(--blue);transform:translate(2px,-2px)}
+.featured{margin-top:27px;border-radius:23px;background:#0b0c0f;color:#fff;padding:25px 27px;display:flex;justify-content:space-between;align-items:center;gap:20px}.featured h3{margin:0 0 5px;font-size:20px}.featured p{margin:0;color:#aeb5c2;font:13px "Anek Devanagari"}.featured a{background:#fff;color:#101522;padding:11px 15px;border-radius:11px;font-size:11px;font-weight:800;white-space:nowrap}.footer{border-top:1px solid var(--line);padding:20px 30px;display:flex;justify-content:space-between;color:#8a919f;font-size:11px}@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(max-width:850px){.news-grid{grid-template-columns:repeat(2,1fr)}.hero-row{display:block}.count{display:none}}@media(max-width:700px){.page{padding:8px}.shell{border-radius:22px}.top{padding:0 18px;height:70px}.nav{display:none;position:absolute;left:10px;right:10px;top:69px;background:#fff;border:1px solid var(--line);padding:7px;border-radius:15px;box-shadow:0 16px 35px rgba(20,28,55,.12);flex-direction:column}.nav.open{display:flex}.nav a{text-align:center}.menu{display:block}.hero{padding:37px 19px 28px}.controls{padding:15px 18px;display:block}.categories{margin-bottom:11px;overflow:auto;flex-wrap:nowrap}.search{width:100%}.content{padding:24px 18px 32px}.news-grid{grid-template-columns:1fr}.thumb{height:170px}.featured{display:block;padding:22px}.featured a{display:inline-block;margin-top:15px}.footer{display:block;text-align:center;padding:18px}.footer div+div{margin-top:7px}}
+</style>
+</head>
+<body>
+<div class="page"><main class="shell">
+<header class="top">
+<a class="brand" href="index.html"><h1>Abhinandan Updates</h1><p>Updates • News • Features • Helpdesk</p></a>
+<nav class="nav" id="nav"><a href="index.html">Home</a><a href="index.html#updates">Updates</a><a class="active" href="latestnews.html">News</a><a href="index.html#features">Features</a><a href="index.html#helpdesk">Helpdesk</a></nav>
+<button class="menu" id="menu">☰</button>
+</header>
+<section class="hero">
+<div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Latest News</div>
+<div class="hero-row"><div><span class="eyebrow">ABHINANDAN UPDATES</span><h2>Latest News</h2><p class="hero-text">Sabhi important news, announcements aur latest information ko ek clean aur easy-to-read place par dekhiye.</p></div><div class="count"><b id="newsCount">06</b><span>NEWS STORIES</span></div></div>
+</section>
+<section class="controls">
+<div class="categories"><button class="chip active" data-filter="all">All News</button><button class="chip" data-filter="education">Education</button><button class="chip" data-filter="updates">Updates</button><button class="chip" data-filter="notice">Notice</button><button class="chip" data-filter="general">General</button></div>
+<input class="search" id="search" type="search" placeholder="Search news...">
+</section>
+<section class="content">
+<div class="section-head"><h3>Fresh from Abhinandan</h3><p>Latest stories & important information</p></div>
+<div class="news-grid" id="newsGrid">
+<article class="news-card" data-category="education" data-title="New Education Update"><div class="thumb"><div class="thumb-icon">🎓</div></div><div class="body"><div class="meta"><span class="tag">EDUCATION</span><span class="date">Today</span></div><h4>New Education Update</h4><p>Education se judi important information aur latest update yahan dekhein.</p><a class="read" href="#">Read Full News <span>↗</span></a></div></article>
+<article class="news-card" data-category="updates" data-title="Important Latest Update"><div class="thumb"><div class="thumb-icon">⚡</div></div><div class="body"><div class="meta"><span class="tag">UPDATE</span><span class="date">Today</span></div><h4>Important Latest Update</h4><p>Latest announcement aur zaroori information ko yahan highlight kiya jayega.</p><a class="read" href="#">Read Full News <span>↗</span></a></div></article>
+<article class="news-card" data-category="notice" data-title="Important Notice Released"><div class="thumb"><div class="thumb-icon">📢</div></div><div class="body"><div class="meta"><span class="tag">NOTICE</span><span class="date">Today</span></div><h4>Important Notice Released</h4><p>Important notice, notification ya official announcement ki details.</p><a class="read" href="#">Read Full News <span>↗</span></a></div></article>
+<article class="news-card" data-category="general" data-title="Latest General News"><div class="thumb"><div class="thumb-icon">◉</div></div><div class="body"><div class="meta"><span class="tag">GENERAL</span><span class="date">Recent</span></div><h4>Latest General News</h4><p>Useful general information aur important developments ek jagah.</p><a class="read" href="#">Read Full News <span>↗</span></a></div></article>
+<article class="news-card" data-category="education" data-title="Admission Related Update"><div class="thumb"><div class="thumb-icon">✦</div></div><div class="body"><div class="meta"><span class="tag">EDUCATION</span><span class="date">Recent</span></div><h4>Admission Related Update</h4><p>Admission, form, result ya counselling se judi information.</p><a class="read" href="#">Read Full News <span>↗</span></a></div></article>
+<article class="news-card" data-category="updates" data-title="New Announcement"><div class="thumb"><div class="thumb-icon">✓</div></div><div class="body"><div class="meta"><span class="tag">UPDATE</span><span class="date">Recent</span></div><h4>New Announcement</h4><p>Naye announcements aur important updates ka dedicated space.</p><a class="read" href="#">Read Full News <span>↗</span></a></div></article>
+</div>
+<div class="featured"><div><h3>Don't miss an update.</h3><p>Abhinandan Updates par latest information ke liye connected rahiye.</p></div><a href="index.html">Back to Home ↗</a></div>
+</section>
+<footer class="footer"><div>© 2026 <strong>Abhinandan Updates</strong></div><div>Latest News</div></footer>
+</main></div>
+<script>
+const menu=document.getElementById("menu"),nav=document.getElementById("nav");menu.onclick=()=>{nav.classList.toggle("open");menu.textContent=nav.classList.contains("open")?"✕":"☰"};
+const chips=document.querySelectorAll(".chip"),cards=document.querySelectorAll(".news-card"),search=document.getElementById("search"),count=document.getElementById("newsCount");let filter="all";
+function render(){let q=search.value.toLowerCase(),n=0;cards.forEach(c=>{let ok=(filter==="all"||c.dataset.category===filter)&&c.dataset.title.toLowerCase().includes(q);c.style.display=ok?"block":"none";if(ok)n++});count.textContent=String(n).padStart(2,"0")}
+chips.forEach(ch=>ch.onclick=()=>{chips.forEach(x=>x.classList.remove("active"));ch.classList.add("active");filter=ch.dataset.filter;render()});search.oninput=render;
+</script>
+</body>
+</html>
