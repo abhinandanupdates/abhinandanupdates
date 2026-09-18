@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features | Abhinandan Updates</title>
+<meta name="description" content="Abhinandan Updates - Explore useful features, tools and services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500;600;700;800&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#101522;--muted:#70798a;--line:#e5e8ef;--bg:#f5f7fb;--blue:#315cff;--purple:#7048ff;--soft:#eef2ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque","Anek Devanagari",sans-serif}a{text-decoration:none;color:inherit}
+.page{padding:18px 14px 35px}.shell{max-width:1180px;margin:auto;background:#fff;border:1px solid #e3e6ed;border-radius:29px;overflow:hidden;box-shadow:0 28px 85px rgba(22,31,55,.11);animation:up .65s ease}
+.top{height:76px;padding:0 30px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(15px);z-index:20}
+.brand h1{font-size:19px;margin:0;font-weight:800}.brand p{margin:3px 0 0;color:var(--muted);font-size:11px}.nav{display:flex;gap:6px}.nav a{padding:10px 13px;border-radius:11px;color:#5d6676;font-size:12px;font-weight:800}.nav a:hover,.nav a.active{background:var(--soft);color:#294bd0}.menu{display:none;border:0;background:#f3f5f8;border-radius:11px;padding:9px 12px;font-size:18px}
+.hero{padding:50px 34px 42px;text-align:center;background:radial-gradient(circle at 14% 15%,rgba(49,92,255,.10),transparent 28%),radial-gradient(circle at 86% 10%,rgba(112,72,255,.10),transparent 27%)}.crumb{font-size:11px;color:#697384;margin-bottom:18px}.crumb a{color:var(--blue);font-weight:700}.eyebrow{display:inline-flex;padding:7px 11px;border-radius:999px;background:var(--soft);color:#294bd0;font-size:10px;font-weight:800;letter-spacing:.5px}
+h2{font-size:clamp(38px,6vw,62px);line-height:1;margin:15px 0 12px;letter-spacing:-2.5px}h2 span{background:linear-gradient(90deg,var(--blue),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{margin:auto;color:var(--muted);font:17px/1.55 "Anek Devanagari",sans-serif;max-width:690px}
+.content{padding:30px 34px 45px}.section-head{margin-bottom:19px}.section-head h3{margin:0;font-size:21px}.section-head p{margin:5px 0 0;color:var(--muted);font:13px "Anek Devanagari",sans-serif}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.feature-card{position:relative;overflow:hidden;min-height:225px;padding:25px;border:1px solid #e1e5ed;border-radius:23px;background:linear-gradient(145deg,#fff 0%,#fbfcff 100%);box-shadow:0 8px 24px rgba(20,28,55,.045);transition:.3s}
+.feature-card:before{content:"";position:absolute;width:170px;height:170px;border-radius:50%;right:-75px;top:-75px;background:linear-gradient(135deg,rgba(49,92,255,.09),rgba(112,72,255,.06));transition:.35s}
+.feature-card:after{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--blue),var(--purple));transform:scaleX(0);transform-origin:left;transition:.3s}
+.feature-card:hover{transform:translateY(-7px);box-shadow:0 22px 45px rgba(20,28,55,.11);border-color:#d5dcf4}.feature-card:hover:before{transform:scale(1.35)}.feature-card:hover:after{transform:scaleX(1)}
+.icon{width:52px;height:52px;border-radius:16px;background:linear-gradient(145deg,#f0f3ff,#e9edff);border:1px solid #e0e5ff;display:grid;place-items:center;font-size:23px;margin-bottom:21px;box-shadow:0 8px 20px rgba(49,92,255,.08);position:relative}
+.feature-card h4{font-size:17px;margin:0 0 8px}.feature-card p{margin:0;color:var(--muted);font:13px/1.55 "Anek Devanagari",sans-serif;max-width:300px}.open{position:absolute;right:21px;bottom:20px;width:31px;height:31px;border-radius:50%;background:#f1f3f7;display:grid;place-items:center;color:#5d6676;font-size:16px;transition:.25s}.feature-card:hover .open{background:var(--soft);color:var(--blue);transform:translate(2px,-2px)}
+.spotlight{margin-top:25px;padding:28px;border-radius:24px;background:#0b0c0f;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px;position:relative;overflow:hidden}.spotlight:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.08);border-radius:50%;right:-95px;top:-120px}.spotlight h3{margin:0 0 7px;font-size:21px}.spotlight p{margin:0;color:#aeb5c2;font:14px/1.5 "Anek Devanagari",sans-serif}.spotlight a{background:#fff;color:#101522;padding:12px 17px;border-radius:12px;font-size:11px;font-weight:800;white-space:nowrap;z-index:1}
+.footer{border-top:1px solid var(--line);padding:20px 30px;display:flex;justify-content:space-between;color:#8a919f;font-size:11px}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(max-width:850px){.feature-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.page{padding:8px}.shell{border-radius:22px}.top{padding:0 18px;height:70px}.nav{display:none;position:absolute;left:10px;right:10px;top:69px;background:#fff;border:1px solid var(--line);padding:7px;border-radius:15px;box-shadow:0 16px 35px rgba(20,28,55,.12);flex-direction:column}.nav.open{display:flex}.nav a{text-align:center}.menu{display:block}.hero{padding:38px 19px 32px}.hero p{font-size:16px}.content{padding:25px 18px 33px}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:205px}.spotlight{display:block;padding:23px}.spotlight a{display:inline-block;margin-top:17px}.footer{display:block;text-align:center;padding:18px}.footer div+div{margin-top:7px}}
+</style>
+</head>
+<body>
+<div class="page"><main class="shell">
+<header class="top">
+<a class="brand" href="index.html"><h1>Abhinandan Updates</h1><p>Updates • News • Features • Helpdesk</p></a>
+<nav class="nav" id="nav"><a href="index.html">Home</a><a href="index.html#updates">Updates</a><a href="latestnews.html">News</a><a class="active" href="features.html">Features</a><a href="index.html#helpdesk">Helpdesk</a></nav>
+<button class="menu" id="menu">☰</button>
+</header>
+
+<section class="hero">
+<div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Features</div>
+<span class="eyebrow">ABHINANDAN UPDATES</span>
+<h2>Useful <span>Features.</span></h2>
+<p>Abhinandan Updates ke useful features aur tools ko ek simple, clean aur premium interface mein access karein.</p>
+</section>
+
+<section class="content">
+<div class="section-head"><h3>Explore Features</h3><p>Useful tools & services, all in one place</p></div>
+
+<div class="feature-grid">
+<a class="feature-card" href="#">
+<div class="icon">⚡</div><h4>Latest Updates</h4><p>Important updates ko quickly discover karein aur latest information se connected rahein.</p><span class="open">↗</span>
+</a>
+<a class="feature-card" href="latestnews.html">
+<div class="icon">◉</div><h4>Latest News</h4><p>News, announcements aur important information ko ek dedicated page par dekhein.</p><span class="open">↗</span>
+</a>
+<a class="feature-card" href="#">
+<div class="icon">🔎</div><h4>Smart Search</h4><p>Required information ko search karke quickly find karne ke liye simple search experience.</p><span class="open">↗</span>
+</a>
+<a class="feature-card" href="#">
+<div class="icon">📌</div><h4>Important Notices</h4><p>Important notices aur announcements ko ek convenient place par access karein.</p><span class="open">↗</span>
+</a>
+<a class="feature-card" href="#">
+<div class="icon">🗂</div><h4>Easy Categories</h4><p>Information ko different categories mein organized format mein browse karein.</p><span class="open">↗</span>
+</a>
+<a class="feature-card" href="index.html#helpdesk">
+<div class="icon">?</div><h4>Helpdesk</h4><p>Query, problem ya support ke liye helpdesk section tak easily pahunchiye.</p><span class="open">↗</span>
+</a>
+</div>
+
+<div class="spotlight">
+<div><h3>Everything, simply organized.</h3><p>Updates, News, Features aur Helpdesk — Abhinandan Updates par sab kuch ek clean experience mein.</p></div>
+<a href="index.html">Back to Home ↗</a>
+</div>
+</section>
+
+<footer class="footer"><div>© 2026 <strong>Abhinandan Updates</strong></div><div>Features</div></footer>
+</main></div>
+<script>
+const menu=document.getElementById("menu"),nav=document.getElementById("nav");
+menu.onclick=()=>{nav.classList.toggle("open");menu.textContent=nav.classList.contains("open")?"✕":"☰"};
+</script>
+</body>
+</html>
